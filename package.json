@@ -6,7 +6,7 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
-    "es-build": "rm -rf dist2 && esbuild App.jsx --bundle --minify --outdir=dist2 --define:process.env.NODE_ENV=\\\"production\\\" && cp index.html ./dist2 && cp styles.css ./dist2/styles.css",
+    "es-build": "rm -rf dist2 && esbuild index.jsx --bundle --minify --outdir=dist2 --define:process.env.NODE_ENV=\\\"production\\\" && cp index.html ./dist2",
     "es-build-inline-script": "rm -rf dist2 && esbuild App.jsx --bundle --minify --outdir=dist2 --define:process.env.NODE_ENV=\\\"production\\\" && cp index.html ./dist2 && cp styles.css ./dist2/styles.css && node inlineScript.js",
     "serve-dist2": "serve ./dist2"
   },

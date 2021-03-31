@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import Alert from "react-bootstrap/Alert";
 import { DangerButton } from "./AnotherComponent";
 import Database from "./Data";
+import "./styles2.css";
 
 export const Greet = () => {
   const [time, setTime] = React.useState(new Date().toLocaleTimeString());

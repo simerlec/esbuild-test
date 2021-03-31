@@ -1,11 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import { Greet } from "./Component";
+import "./styles.css";
 
-const App = () => (
+export const App = () => (
   <>
     <Greet />
   </>
 );
-
-ReactDOM.render(<App />, document.getElementById("root"));
